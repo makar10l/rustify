@@ -1,5 +1,6 @@
 use files;
 fn main() {
-    let path = files::get::get_music_path();
-    println!("Hello, world! {}", path);
+    let mut void = String::new();
+    println!("RUSTIFY!!!");
+    std::io::stdin().read_line(&mut void).expect("IDK");
 }
