@@ -1,5 +1,5 @@
 fn main() {
     let mut void = String::new();
-    println!("RUSTIFY!!!");
+    println!("{}", files::get::get_logo().expect("wtf"));
     std::io::stdin().read_line(&mut void).expect("IDK");
 }

@@ -2,3 +2,5 @@
 rust.sh
 TODO.md
 src/bin/tester.rs
+.gitignore
+Cargo.lock

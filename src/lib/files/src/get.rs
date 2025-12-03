@@ -31,3 +31,10 @@ pub fn get_music_path() -> Result<String, Error>{
     }
     else{Ok(path_file)}
 }
+pub fn get_logo() -> Result<String, Error>{
+    let username = std::env::var("USER").expect("cannot identificate you");
+    match std::fs::read_to_string(format!("/home/{}/.rustify/data/logo.txt", username)){
+        Err(err) => Err(err),
+        Ok(logo) => Ok(logo),
+    }
+}
